@@ -1,4 +1,4 @@
-class Number:
+class Number: # here we generate an code with help of infinite iterrator.
     def __init__(self):
         self.number=1
     def __iter__(self):
