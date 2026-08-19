@@ -1,5 +1,8 @@
+
 # generate an infinite iterator for infinite numbers.
 class Number:
+
+
     def __init__(self):
         self.number=1
     def __iter__(self):
@@ -10,4 +13,3 @@ class Number:
         return number
 num=Number()
 for i in num:
-    print(i)
