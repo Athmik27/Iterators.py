@@ -37,7 +37,7 @@ for letter in reverse_string("John Doe"):
     print(letter)
 
 
-# generate an squre without using the argument in the function
+# generate an square without using the argument in the function
 def number_square():
     number=5
     for i in range(number):
