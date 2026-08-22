@@ -1,7 +1,7 @@
 #What will be the output?
-# numbers = [10, 20, 30]
+numbers = [10, 20, 30]
 
-# it = iter(numbers) #here iterator starts initializing
+ it = iter(numbers) #here iterator starts initializing
 
 # print(next(it)) #here iter marks to 10
 # print(next(it)) #here iter marks to 20
