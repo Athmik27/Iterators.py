@@ -1,0 +1,143 @@
+#What will be the output?
+# numbers = [10, 20, 30]
+
+# it = iter(numbers) #here iterator starts initializing
+
+# print(next(it)) #here iter marks to 10
+# print(next(it)) #here iter marks to 20
+
+# for i in it:
+#     print(i) #when it enters the for look it points to 30 beacuse the iterator is already pointing to 20
+
+# #What do these two special methods do?
+# #__iter__() returns the iterator object
+# #__next__() returns the next value.
+
+# #code to generate numbers
+# class Numbers:
+#     def __init__(self):
+#         self.num = 1
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.num <= 5:
+#             value = self.num
+#             self.num += 1
+#             return value
+#         else:
+#             raise StopIteration
+
+
+# numbers = Numbers()
+
+# for i in numbers:
+#     print(i)
+
+#Create an iterator that prints even numbers from 2 to 10
+# class Even_numbers:
+#     def __init__(self):
+#         #self.num=2
+#         pass
+#     def __iter__(self):
+#         self.num=2
+#         return self
+#     def __next__(self):
+#         if self.num<=10:
+#             value=self.num
+#             self.num+=2
+#             return value
+#         else:
+#             raise StopIteration
+# evn_num=Even_numbers()
+# for i in evn_num:
+#     print(i)
+
+#tell what is the output
+# def numbers():
+#     yield 1
+#     yield 2
+#     yield 3
+
+# x = numbers()
+
+# print(next(x))
+# print(next(x))
+# print(next(x))
+
+#tell what is the output
+# def test():
+#     print("A")
+#     yield 10
+#     print("B")
+#     yield 20
+#     print("C")
+#     yield 30
+
+# x = test()
+
+# print(next(x))
+# print(next(x))
+
+# #generate numbers
+# def numbers():
+#     yield 10
+#     yield 20
+#     yield 30
+# for i in numbers():
+#     print(i)
+
+#output printing
+# def Numbers():
+#     for i in range(1,4):
+#         yield i
+# x=Numbers()
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
+
+#square of numbers
+# def Square(n):
+#     for i in range(1,n+1):
+#         yield i*i
+# x=Square(5)
+# for i in x:
+#     print(i)
+
+#even numbers from 2 to n
+# def even_numbers(n):
+#     for i in range(2,n+1):
+#         if i%2==0:
+#             yield i
+# evn_num=even_numbers(10)
+# for i in evn_num:
+#     print(i)
+
+#imp case
+# def gen():
+#     yield 10
+#     yield 20
+#     yield 30
+
+# x = gen()
+
+# # print(next(x))
+# # print(list(x))
+
+# #What will this code output?
+# def numbers():
+#     print("Start")
+#     yield 10
+#     print("Middle")
+#     yield 20
+#     print("End")
+#     yield 30
+# x = numbers()
+# print("A")
+# print(next(x))
+# print("B")
+# print(next(x))
+# print("C")
+
