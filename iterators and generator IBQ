@@ -3,37 +3,15 @@ numbers = [10, 20, 30]
 
  it = iter(numbers) #here iterator starts initializing
 
-# print(next(it)) #here iter marks to 10
-# print(next(it)) #here iter marks to 20
+ print(next(it)) #here iter marks to 10
+ print(next(it)) #here iter marks to 20
 
-# for i in it:
-#     print(i) #when it enters the for look it points to 30 beacuse the iterator is already pointing to 20
+ for i in it:
+     print(i) #when it enters the for look it points to 30 beacuse the iterator is already pointing to 20
 
 # #What do these two special methods do?
 # #__iter__() returns the iterator object
 # #__next__() returns the next value.
-
-# #code to generate numbers
-# class Numbers:
-#     def __init__(self):
-#         self.num = 1
-
-#     def __iter__(self):
-#         return self
-
-#     def __next__(self):
-#         if self.num <= 5:
-#             value = self.num
-#             self.num += 1
-#             return value
-#         else:
-#             raise StopIteration
-
-
-# numbers = Numbers()
-
-# for i in numbers:
-#     print(i)
 
 #Create an iterator that prints even numbers from 2 to 10
 # class Even_numbers:
