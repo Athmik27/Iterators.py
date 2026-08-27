@@ -1,5 +1,5 @@
 #code to generate even numbers using iterator
-class Even_Number():
+class Even_Number(): # class Even Number: is also correct if we want to inherit then we use class Even Number():
     def __init__(self,max):
         self.number=2
         self.max=max
